@@ -1,0 +1,653 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f4ef;
+    color: #333;
+}
+
+
+/* =========================
+   MENÚ
+========================= */
+
+header {
+    background-color: #6b4f3f;
+    padding: 20px 8%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+nav h1 {
+    color: white;
+    font-size: 28px;
+}
+
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+nav ul li a:hover {
+    color: #f2d3a2;
+}
+
+
+/* =========================
+   INICIO
+========================= */
+
+.hero {
+    min-height: 550px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    padding: 30px;
+
+    background: linear-gradient(
+        rgba(107, 79, 63, 0.75),
+        rgba(107, 79, 63, 0.75)
+    );
+}
+
+
+.hero h2 {
+    font-size: 55px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+
+.hero p {
+    font-size: 21px;
+    color: white;
+    max-width: 650px;
+    margin: auto;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   BOTONES
+========================= */
+
+button {
+    margin-top: 30px;
+
+    padding: 14px 25px;
+
+    border: none;
+    border-radius: 25px;
+
+    background-color: #d29b62;
+
+    color: white;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+button:hover {
+    background-color: #b77c45;
+    transform: scale(1.05);
+}
+
+
+/* =========================
+   SECCIONES
+========================= */
+
+.seccion {
+    padding: 70px 10%;
+    text-align: center;
+}
+
+
+.seccion h2 {
+    color: #6b4f3f;
+    font-size: 35px;
+    margin-bottom: 25px;
+}
+
+
+.seccion p {
+    max-width: 850px;
+    margin: 15px auto;
+    line-height: 1.7;
+}
+
+
+/* =========================
+   FOTO DE DOÑA MARÍA
+========================= */
+
+.foto-maria {
+    display: block;
+
+    width: 320px;
+    height: 400px;
+
+    object-fit: cover;
+
+    margin: 30px auto;
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+/* =========================
+   HISTORIA
+========================= */
+
+.timeline {
+    display: grid;
+
+    grid-template-columns:
+        repeat(5, 1fr);
+
+    gap: 20px;
+
+    margin-top: 45px;
+}
+
+
+.evento {
+    background-color: white;
+
+    padding: 25px;
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+.evento h3 {
+    color: #c1814c;
+
+    font-size: 28px;
+
+    margin-bottom: 15px;
+}
+
+
+/* =========================
+   MISIÓN Y VISIÓN
+========================= */
+
+.tarjetas {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 30px;
+
+    flex-wrap: wrap;
+}
+
+
+.tarjeta {
+    background-color: white;
+
+    padding: 35px;
+
+    width: 400px;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+.tarjeta h2 {
+    color: #6b4f3f;
+}
+
+
+/* =========================
+   SERVICIOS
+========================= */
+
+.servicios {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 20px;
+
+    flex-wrap: wrap;
+
+    margin-top: 40px;
+}
+
+
+.servicio {
+    width: 220px;
+
+    padding: 30px 20px;
+
+    background-color: white;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 5px 15px rgba(0, 0, 0, 0.1);
+
+    transition: 0.3s;
+}
+
+
+.servicio:hover {
+    transform: translateY(-5px);
+}
+
+
+.servicio span {
+    font-size: 40px;
+}
+
+
+.servicio h3 {
+    margin: 15px 0;
+
+    color: #6b4f3f;
+}
+
+
+/* =========================
+   MANOS QUE SOSTIENEN
+========================= */
+
+.apoyo {
+    background-color: #f3eadf;
+}
+
+
+.apoyo .intro {
+    max-width: 700px;
+}
+
+
+.apoyo-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 20px;
+
+    margin-top: 40px;
+}
+
+
+.apoyo-card {
+    background-color: white;
+
+    padding: 30px 20px;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 5px 15px rgba(0, 0, 0, 0.1);
+
+    transition: 0.3s;
+}
+
+
+.apoyo-card:hover {
+    transform: translateY(-5px);
+}
+
+
+.apoyo-card span {
+    font-size: 40px;
+}
+
+
+.apoyo-card h3 {
+    color: #6b4f3f;
+
+    margin: 15px 0;
+}
+
+
+.apoyo-card p {
+    line-height: 1.6;
+}
+
+
+/* =========================
+   METAS
+========================= */
+
+.metas {
+    background-color: white;
+}
+
+
+.metas-lista {
+    max-width: 950px;
+
+    margin: 40px auto 0;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 20px;
+}
+
+
+.meta {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 20px;
+
+    text-align: left;
+
+    background-color: #f8f4ef;
+
+    padding: 25px;
+
+    border-radius: 15px;
+
+    border-left: 5px solid #d29b62;
+}
+
+
+.meta strong {
+    font-size: 28px;
+
+    color: #8b5e3c;
+}
+
+
+.meta p {
+    margin: 0;
+}
+
+
+/* =========================
+   FORJEMOS UNA VEJEZ SANA
+========================= */
+
+.vejez {
+    padding: 80px 10%;
+
+    background-color: #ead8c5;
+
+    text-align: center;
+}
+
+
+.vejez-contenido {
+    max-width: 1100px;
+
+    margin: auto;
+}
+
+
+.vejez h2 {
+    color: #6b4f3f;
+
+    font-size: 38px;
+
+    margin-bottom: 20px;
+}
+
+
+.vejez-contenido > p {
+    max-width: 700px;
+
+    margin: auto;
+
+    line-height: 1.7;
+}
+
+
+.vejez-items {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 25px;
+
+    margin-top: 40px;
+}
+
+
+.vejez-items div {
+    background-color: white;
+
+    padding: 30px;
+
+    border-radius: 18px;
+
+    text-align: left;
+
+    box-shadow:
+        0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+
+.vejez-items h3 {
+    color: #6b4f3f;
+
+    margin-bottom: 10px;
+}
+
+
+.vejez-items p {
+    line-height: 1.6;
+}
+
+
+/* =========================
+   DATOS
+========================= */
+
+.residentes {
+    text-align: center;
+
+    padding: 70px 10%;
+
+    background-color: #ead8c5;
+}
+
+
+.residentes h2 {
+    color: #6b4f3f;
+
+    font-size: 35px;
+
+    margin-bottom: 35px;
+}
+
+
+.datos {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 100px;
+}
+
+
+.datos strong {
+    display: block;
+
+    font-size: 55px;
+
+    color: #8b5e3c;
+}
+
+
+.datos p {
+    font-size: 18px;
+}
+
+
+/* =========================
+   DONACIONES
+========================= */
+
+.donaciones {
+    text-align: center;
+
+    padding: 80px 20px;
+
+    background-color: #6b4f3f;
+
+    color: white;
+}
+
+
+.donaciones h2 {
+    font-size: 35px;
+
+    margin-bottom: 20px;
+}
+
+
+.donaciones p {
+    max-width: 650px;
+
+    margin: auto;
+
+    line-height: 1.6;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background-color: #3e2d24;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 20px;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 1100px) {
+
+    .timeline {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+
+    .apoyo-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 800px) {
+
+    nav {
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+
+    nav ul {
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+        gap: 15px;
+    }
+
+
+    .hero h2 {
+        font-size: 40px;
+    }
+
+
+    .timeline {
+        grid-template-columns: 1fr;
+    }
+
+
+    .datos {
+        flex-direction: column;
+
+        gap: 30px;
+    }
+
+
+    .apoyo-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .metas-lista {
+        grid-template-columns: 1fr;
+    }
+
+
+    .vejez-items {
+        grid-template-columns: 1fr;
+    }
+
+
+    .foto-maria {
+        width: 280px;
+        height: 350px;
+    }
+
+}
